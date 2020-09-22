@@ -1,0 +1,20 @@
+{
+    "name": "undercoder/vsoutils",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andres Reyes",
+            "email": "chess.coach.ar@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+		"squizlabs/php_codesniffer": "^3.5"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"vso\\vsoutils\\" : "src/vso/vsoutils"
+		}
+	}
+}
