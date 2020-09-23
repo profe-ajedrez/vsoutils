@@ -12,7 +12,7 @@ interface InterfaceGlobals
      * @return void
      * @throws InvalidArgumentException     when $key null
      */
-    public static function put($key, $value);
+    public function put($key, $value);
 
     /**
      * get
@@ -21,7 +21,7 @@ interface InterfaceGlobals
      * @return mixed
      * @throws InvalidArgumentException     when $key null
      */
-    public static function get($key);
+    public function get($key);
 
     /**
      * forget
@@ -30,5 +30,5 @@ interface InterfaceGlobals
      * @return void
      * @throws InvalidArgumentException     when $key null 
      */
-    public static function forget($key);
+    public function forget($key);
 }

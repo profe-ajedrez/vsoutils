@@ -2,21 +2,21 @@
 
 namespace vso\vsoutils\globalutils;
 
-class Get extends BaseGlobal implements  InterfaceGlobals
+class Server extends BaseGlobal implements InterfaceGlobals
 {
 
     public function put($key, $value)
     {
-        $this->innerPut($_GET, $key, $value);
+        $this->innerPut($_SERVER, $key, $value);
     }
 
     public function get($key)
     {
-        return $this->innerGet($_GET, $key);
+        return $this->innerGet($_SERVER, $key);
     }
 
     public function forget($key)
     {
-        $this->innerForget($_GET, $key);
+        $this->innerForget($_SERVER, $key);
     }
 }
